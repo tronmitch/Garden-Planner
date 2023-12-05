@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+    <!-- TODO add functionality to dropdown and website information/image (image styling) -->
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./assets/pictures/favicon.jpg" type="image/x-icon">
+    <link rel="stylesheet" href="./assets/css/reset.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <title>Garden Planner</title>
+</head>
+
+<body>
+    <header class="level hero ">
+        <h1 class="hero-body">Garden Planner</h1>
+
+        <!-- nav disappears for mobile -->
+        <nav id="navigation-desktop" class="hero-foot navbar-menu">
+            <a href="./favorites.html" class="navOb navbar-item">Favorites</a>
+            <a id="navGarden_tips" class="navOb navbar-item">Garden Tips</a>
+        </nav>
+
+        <!-- mobile navigation-->
+        <div id="navigation-mobile" class="dropdown column is-full ">
+            <div class="dropdown-trigger">
+                <button class="button is-medium is-fullwidth"> Navigation</button>
+            </div>
+            <div class="navMenu hero is-small">
+                <div class="dropdown-content  navContent">
+                    <a href="./favorites.html" class="navItem dropdown-item">Favorites</a>
+                    <a id="navGarden_tips" class="navItem dropdown-item ">Garden Tips</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <div class="tile is-ansestor">
+    <aside class="tile is-parent is-3 is-vertical ">
+        <section class="search tile is-child box">
+            <form id="general_search" class="tile is-child">
+                <p class="searchP">Search</p>
+                <input class="input tile is-10" id="searchInput">
+                <button class="searchBtn button is-rounded is-inline" id="searchButton">Search</button>
+            </form>
+            <form id="Location_search"class="tile is-child ">
+                <p class="searchP">Search by Location</p>
+                <input class="input tile is-10" id="#locationInput">
+                <button class="searchBtn button is-rounded is-inline" id="locationButton">Search</button>
+            </form>
+        </section>
+        <section class="favorites tile is-child box">
+           <p class="browse">Browse for plants</p>
+           <button class="button is-rounded is-large" id="browseButton">Browse</button>
+        </section>
+    </aside>
+
+    <main class="info tile is-parent is-vertical box">
+        <div class="tile is-child box">
+            <p>
+            Welcome to the garden planner! This website is designed to help users gather information for plants to put in their gardens, It gives access to 3000 different plants. Users can use the searches to look for plants by name or location, you can also find the hardiness zone of your location. If a user doesn’t have a specific plant in mind then the browse button will allow them to look through the plant log. 
+            Favorite plants can be saved and removed. There is also a little information about gardening, to help beginners with their research.
+            </p>
+        </div>
+        <div class="tile is-parent is-vertical box">
+        <h2 >Gardening Tips</h2>
+        <section class="tile is-child box">
+        <h3>Soil type</h3>
+        <p>Soil is different depending on region, the type of soil can change the speed the water drains and the stability of your plants. 
+        There can also be contaminants in your soil and/or the ph level can be inhospitable to what is planted. Testing the soil in your area is one of the first recommended steps in your gardening journey.
+        </p>   
+    </section>
+        <section class="tile is-child is-vertical box">
+        <h3>Hardiness zone</h3>
+        <p>The hardiness zone is how resilient a plant must be to survive in a region. 
+            The zones are represented by a number, plants will do well in regions with their associated numbers. 
+        </p>
+    </section>
+<section class="tile is-child box">
+        <h3>Sunlight</h3>
+        <p>Afternoon sunlight is harsher than morning. If you cannot place your garden in an ideal location that increases the morning light while reducing the afternoon sun. 
+            The harshness of direct sunlight can be reduced with a screen, pergola, or a lattice wall. 
+            plant height can change the amount of sun your plants are exposed to so be mindful of the placement in your garden
+        </p>
+    </section>
+       <section class="tile is-child box">
+    <h3>Cross Pollination</h3>
+        <p>Cross pollination can occur when plants of the same species are placed together, it can create undesired outcomes when growing foods. 
+            It is recommended that plants of similar species are separated to reduce the chances of this happening.
+        </p>
+    </section> 
+    <section class="tile is-child box">
+        <h3>Watering</h3>
+        <p>There are multiple ways to water plants like drip systems or just with a hose. 
+            It is recommended to water your plants within the guidelines of your local community. 
+            If your area doesn't have watering restrictions then it is recommended to water in the morning between 5-9 or in the afternoon between the same hours. 
+            Watering in the morning is most preferred as it gives the soil time to dry.
+        </p>
+    </section>
+    <section class="tile is-child box">
+        <h3>Alternative ways to garden</h3>
+        <p>If your area isn't suitable for traditional methods there are other ways to grow plants. 
+            Raised beds are a way to lift your plants off of the ground and give them suitable soil conditions, it increases the soil’s exposure to temperature changes and may change the watering requirements.  
+            Planters are another way to grow your plants but the space available for plant growth may cause issues.
+        </section>
+        </p>
+        </div>
+    </main>
+</div>
+
+<footer class="base footer">
+    <p>la</p>
+</footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+    <script src="./assets/js/nav.js"></script>
+    <script src="./assets/js/script.js"></script>
+    <script src="./assets/js/api_key.js"></script>
+    <script src="./assets/js/plant_api.js"></script>
+    <script src="./assets/js/test_map_stuff.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+
+</body>
+
+</html>

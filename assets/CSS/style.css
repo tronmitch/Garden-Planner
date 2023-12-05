@@ -1,0 +1,105 @@
+/* pallet colors */
+:root{
+--midMauve: #896b79;
+--midBrown:#9e7e6e;
+--lightYellow:#fffcbd;
+--lightGreen:#b8cca4;
+--darkBlue:#0d7676;
+--darkRed:#984a4a;
+--white:antiquewhite;
+}
+body{
+    background-color: var(--lightGreen);
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+/* header start */
+header{
+    background-color: var(--darkRed);
+    
+}
+h1{
+    font-size: 50px;
+    color:var(--white);
+}
+nav{
+  margin-left:60%;
+  font-size: 30px;  
+  
+}
+.navOb{
+  color:var(--white);  
+}
+#navigation-mobile{
+    display:none;
+}
+.navMenu{
+display: none;
+}
+.navContent{
+    background-color: var(--midMauve);
+    
+}
+.navItem{
+color: var(--white);   
+}
+a{
+    text-decoration: none;
+    color:var(--white);
+}
+/* header end */
+
+/* aside start */
+.search{
+    /* background-color: var(--lightYellow); */
+    background-image:url(../pictures/backgroundVines.png);
+    background-size: 300px;
+    padding:20px;
+}
+.searchP{
+    background-color: var(--lightGreen);
+    display:inline;
+    padding:5px
+}
+.button{
+    background: var(--midMauve);
+    color:var(--white);
+}
+.favorites{
+    background-color: var(--midBrown);
+    font-size:30px;
+}
+/* aside end */
+
+/*.info is main*/
+.info{
+    background-color: var(--midMauve);
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+/* footer start */
+footer{
+   margin-top:auto; 
+   
+}
+.base{
+   background-color: var(--darkBlue); 
+}
+/* footer end */
+
+/* media queries*/
+@media screen and (max-width:992px) {
+    #navigation-mobile{
+        display:inline;
+    }
+    .searchBtn{
+        margin-top:5px;
+    }
+}
+@media screen and (max-width:768px){
+.info{
+    margin-left:10px;
+}
+}
+

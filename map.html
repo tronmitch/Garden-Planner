@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Simple Marker</title>
+    <!-- The callback parameter is required, so we use console.debug as a noop -->
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBwIyNhmaxYu2SbGV7ZkwxI064fWd8TXNg&callback=console.debug&libraries=maps,marker&v=beta">
+    </script>
+    <link rel="stylesheet" href="./style.css"/>
+    <style>
+        /* Always set the map height explicitly to define the size of the div
+ * element that contains the map. */
+gmp-map {
+  height: 100%;
+}
+
+/* Optional: Makes the sample page fill the window. */
+html,
+body {
+  height: 75%;
+  margin: 0;
+  padding: 0;
+  width: 75%;
+}
+input{
+    height: 50px;
+    width: 75%
+}
+
+    </style>
+  </head>
+  <body>
+    <!-- <input type="text" placeholder="Enter your Address..">
+    <gmp-map center="40.297691345214844,-111.6943588256836" zoom="14" map-id="DEMO_MAP_ID">
+      <gmp-advanced-marker position="40.297691345214844,-111.6943588256836" title="My location">
+      </gmp-advanced-marker>
+    </gmp-map> -->
+    <iframe
+    place-card="hidden"
+    width="500"
+    height="400"
+    frameborder="0" style="border:0"
+    referrerpolicy="no-referrer-when-downgrade"
+    src="https://www.google.com/maps/embed/v1/search?key=AIzaSyBwIyNhmaxYu2SbGV7ZkwxI064fWd8TXNg&q=Provo, UTah"
+    >
+  </iframe>
+
+  </body>
+</html>
